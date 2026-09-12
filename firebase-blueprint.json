@@ -1,0 +1,48 @@
+{
+  "entities": {
+    "teachers": {
+      "title": "Teacher Classroom",
+      "description": "Classroom metadata, teacher profile, and student roster",
+      "type": "object",
+      "properties": {
+        "teacherName": { "type": "string" },
+        "teacherEmail": { "type": "string" },
+        "grade": { "type": "string" },
+        "section": { "type": "string" },
+        "subject": { "type": "string" },
+        "students": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rollNumber": { "type": "string" },
+              "name": { "type": "string" }
+            }
+          }
+        },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "attendance": {
+      "title": "Attendance Record",
+      "description": "Daily attendance records for students",
+      "type": "object",
+      "properties": {
+        "date": { "type": "string" },
+        "records": { "type": "object" },
+        "recordedAt": { "type": "string" }
+      }
+    },
+    "marks": {
+      "title": "Assessment Marks",
+      "description": "Marks recorded for classroom assessments",
+      "type": "object",
+      "properties": {
+        "assessmentName": { "type": "string" },
+        "maxMarks": { "type": "number" },
+        "scores": { "type": "object" },
+        "recordedAt": { "type": "string" }
+      }
+    }
+  }
+}

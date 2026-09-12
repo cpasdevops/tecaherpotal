@@ -1,0 +1,6 @@
+{
+  "name": "Bhutan Teacher Classroom App",
+  "description": "A simple classroom portal for school teachers in Bhutan to manage classes, student rosters, attendance, and marks with Firebase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
